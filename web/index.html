@@ -18,8 +18,8 @@
   -->
 
   <base href="$FLUTTER_BASE_HREF">
-
-  <meta name="description" content="A new Flutter project.">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="TianGong AI Knowledge Base">
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
@@ -34,29 +34,10 @@
   <title>TianGong AI Knowledge Base</title>
   <link rel="manifest" href="manifest.webmanifest">
 
-  <script>
-    // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = null;
-  </script>
-  <!-- This script adds the flutter initialization JS code -->
-  <script src="flutter.js" defer=""></script>
 </head>
 
 <body>
-  <script>
-    window.addEventListener('load', function (ev) {
-      // Download main.dart.js
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: serviceWorkerVersion,
-        }
-      }).then(function (engineInitializer) {
-        return engineInitializer.initializeEngine();
-      }).then(function (appRunner) {
-        return appRunner.runApp();
-      });
-    });
-  </script>
+  <script src="flutter_bootstrap.js" async></script>
 </body>
 
 </html>
